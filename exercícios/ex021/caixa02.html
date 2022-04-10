@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping TAGS</title>
+</head>
+<style>
+    body{
+        background-color: dimgray;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    }
+    main{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px ;
+    box-shadow: 4px 4px 4px 4px rgba(73, 79, 185, 0.164);
+    
+
+    }
+    article{
+    background-color: lightgray;
+    padding: 5px ;
+    }
+    article > aside{
+    background-color: rgb(165,165 ,165);
+    }
+    nav{
+    background-color: rgb(121, 116, 116);
+    padding: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0, 0.315); /*sombra*/
+   
+    }
+    nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+    }
+    nav > a:hover{ /* hover = quando passar o mouse no conteudo da tag */
+    text-decoration:underline;
+    }
+    footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+    }
+
+    footer > h1 {
+        margin: 0px;
+    }
+    #bola {
+        background-color: white;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+</style>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Tiro, porrada e bomba</p>
+
+            <section id="noticias">
+                <article>
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, saepe magni possimus quibusdam nobis eveniet? Reiciendis velit maxime perspiciatis, rerum, quasi non saepe beatae repellat, nihil soluta pariatur voluptatem provident!</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+
+            </section>
+
+        </section>
+
+    </main>
+    <footer>
+        <h1>made up by: Beezie</h1>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
