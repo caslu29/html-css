@@ -13,14 +13,31 @@
         table{
             width: 500px;
             border-collapse:collapse;
+            position: relative;
         }
         td , th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         tfoot{
@@ -36,6 +53,7 @@
 <body>
     <h1>Uso de Tabelas GRANDES </h1>
     <!--
+        CAPTION
         Anatomia para tabelas grandes
         Table
             Thead
@@ -48,10 +66,11 @@
     
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 70px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -67,14 +86,113 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptatibus ipsam sapiente suscipit asperiores dolorum excepturi perspiciatis animi? Minima distinctio vero earum quidem aliquam exercitationem laboriosam esse ipsam suscipit quos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptatum inventore autem maiores ea sed minima exercitationem quidem laborum placeat similique consequuntur quas culpa cupiditate ut est molestiae, dicta laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repudiandae esse ullam quis, pariatur repellat assumenda mollitia inventore vel doloribus incidunt dignissimos quos commodi facere eligendi quam exercitationem laborum quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorum architecto cum obcaecati iste beatae ullam impedit aperiam minima commodi recusandae iusto aliquid accusantium! Doloremque aliquam ab qui a eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam inventore explicabo? Veniam voluptates animi aperiam officiis id rem ullam a, ex ipsa ea quis. Quae adipisci inventore exercitationem eos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dolorem obcaecati eos sunt facilis, nisi dolorum repellat in alias et pariatur, exercitationem quidem vitae facere corrupti quasi error molestias hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit perferendis expedita at inventore hic praesentium minus labore, excepturi autem, dolores nulla! Et deserunt perspiciatis corporis dignissimos fugit itaque eius consequatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil maiores quo, nobis aspernatur quidem doloremque nemo optio deserunt dolor animi dicta totam exercitationem dignissimos dolorum quae explicabo sit perferendis possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, rerum itaque? Quas ad excepturi impedit nisi deserunt ullam vel illo sint hic, molestias dignissimos reiciendis expedita quam soluta nemo? Alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, velit! Incidunt esse nam enim iste voluptate dignissimos amet aliquid. Esse, accusamus! Doloribus veritatis libero mollitia magnam debitis quia sapiente distinctio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, fugit? Inventore dolorem, rem omnis placeat ullam culpa! Dolorum ducimus eos adipisci et architecto, alias, quas beatae quos dolorem corrupti quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatibus culpa? Corrupti odit ullam necessitatibus iste debitis, eligendi in voluptatibus consequuntur? Dolorum, adipisci nesciunt. Nobis impedit accusamus minima aut magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, inventore maxime maiores sapiente quas laborum pariatur accusamus repellat ratione reprehenderit ut. Molestiae dolore saepe, porro dolor minima blanditiis sit laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis dicta illum quidem molestias beatae impedit earum nostrum voluptatibus eos sed maxime pariatur totam maiores, laudantium ipsa repellendus tenetur tempora. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus iste quod hic, dolorum iure nihil in, dolorem eum obcaecati impedit amet tenetur est possimus consectetur excepturi consequuntur? Consectetur, esse explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iste adipisci tenetur doloribus labore nesciunt? Corporis voluptas asperiores ex, odit reprehenderit dignissimos distinctio quisquam voluptate doloremque sed provident dolor omnis. lore 
+        
+    </p>
     
 </body>
 </html>
